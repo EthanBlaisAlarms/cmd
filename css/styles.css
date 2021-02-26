@@ -3,3 +3,9 @@ table, th, td {
   border-collapse: collapse;
   background-color: E0E0E0
 }
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
