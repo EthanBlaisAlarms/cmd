@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>EBA Command Center - Login to Admin</title>
+  </head>
+  <body>
+    <h1>Verification required</h1>
+    <form name="login">
+      Username<input type="text" name="userid"/>
+      Password<input type="password" name="pswrd"/>
+      <input type="button" onclick="check(this.form)" value="Login"/>
+      <input type="reset" value="Cancel"/>
+    </form>
+    <script language="javascript">
+      function check(form) {
+        if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+          window.open("admin.html")
+        }
+        else {
+          alert("The Username or Password is incorrect")/*displays error message*/
+        }
+      }
+    </script>
+  </body>
+</html>
