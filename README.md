@@ -8,4 +8,4 @@ You can download EBA Command Center here:
 https://sites.google.com/view/eba-tools/home/cmd
 
 Access published version here:
-https://ethanblaisalarms.github.io/eba-cmd-admin
+https://ethanblaisalarms.github.io/cmd
