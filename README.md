@@ -6,3 +6,6 @@ EBA Command Center 7.2 and above can connect to this page to get data such as la
 
 You can download EBA Command Center here:
 https://sites.google.com/view/eba-tools/home/cmd
+
+Access published version here:
+https://ethanblaisalarms.github.io/eba-cmd-admin
