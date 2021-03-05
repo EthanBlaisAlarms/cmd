@@ -1,5 +1,4 @@
 # EBA Command Center - Website
-EBA Command Center Administrator Content
 
 EBA Command Center 7.2 and above can connect to this page to get data such as latest version.
 Users can download EBA Command Center from this page.
