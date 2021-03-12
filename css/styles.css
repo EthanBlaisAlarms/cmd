@@ -23,3 +23,7 @@ footer, header {
   font-size: 20px;
   cursor: pointer;
 }
+.button:hover {
+  background-color: #003000;
+  colot: white;
+}
