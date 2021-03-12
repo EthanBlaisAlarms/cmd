@@ -13,12 +13,13 @@ footer, header {
   color: black;
 }
 .button {
-  text-align: right;
-  padding: 1px;
+  text-align: center;
+  padding: 2px;
   background-color: #00FF00;
+  align: center;
+  width: 50%
   color: black;
   border: 1px solid black;
   font-size: 20px;
   cursor: pointer;
-  
 }
