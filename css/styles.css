@@ -12,7 +12,7 @@ footer, header {
   background-color: E0E0E0;
   color: black;
 }
-.button {
+.button, button {
   text-align: center;
   padding: 2px;
   background-color: #00FF00;
@@ -22,7 +22,7 @@ footer, header {
   font-size: 20px;
   cursor: pointer;
 }
-.button:hover {
+.button:hover, button:hover {
   background-color: #00AA00;
   color: white;
 }
