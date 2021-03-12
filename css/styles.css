@@ -16,7 +16,6 @@ footer, header {
   text-align: center;
   padding: 2px;
   background-color: #00FF00;
-  align: center;
   width: 50%
   color: black;
   border: 1px solid black;
@@ -25,7 +24,7 @@ footer, header {
 }
 .button:hover {
   background-color: #003000;
-  colot: white;
+  color: white;
 }
 ::selection {
   background: #ffb7b7; /* WebKit/Blink Browsers */
