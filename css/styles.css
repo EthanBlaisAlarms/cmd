@@ -23,12 +23,12 @@ footer, header {
   cursor: pointer;
 }
 .button:hover {
-  background-color: #003000;
+  background-color: #00AA00;
   color: white;
 }
 ::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
+  background: #FF0000;
 }
 ::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
+  background: #FF0000;
 }
