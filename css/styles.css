@@ -12,3 +12,10 @@ footer, header {
   background-color: E0E0E0;
   color: black;
 }
+.button {
+  text-align: right;
+  padding: 1px;
+  width: 50%;
+  background-color: #00FF00;
+  color: black;
+}
