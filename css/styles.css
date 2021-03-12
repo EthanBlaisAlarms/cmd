@@ -3,7 +3,17 @@ table, th, td {
   border-collapse: collapse;
   background-color: E0E0E0;
 }
-footer, header, .footer, .header {
+footer, header {
+  text-align: right;
+  padding: 2px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: E0E0E0;
+  color: black;
+}
+
+.footer {
   position: fixed;
   text-align: right;
   padding: 2px;
