@@ -32,3 +32,6 @@ button:hover {
 ::-moz-selection {
   background: #FF0000;
 }
+.disable {
+  cursor: not-allowed;
+}
