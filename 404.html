@@ -7,6 +7,10 @@
     <div>
       <h1>404</h1>
       <h3>Error 404 - Page/File not found</h3>
+      <script>
+        document.getElementById("demo").innerHTML = 
+        "Make sure you typed the URL correctly:<br>" + window.location.href;
+       </script>
       <div>
         <button onclick="document.location='index.html'">Go To Homepage</button>
       </div>
