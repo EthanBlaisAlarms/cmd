@@ -1,0 +1,30 @@
+
+<html lang="en">
+  <head>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <title>EBA Command Center - 403</title>
+    <link href="../css/styles404.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="refresh" content="15; URL=https://ethanblaisalarms.github.io/cmd/index" />
+  </head>
+  <body>
+    <div>
+      <h1>403</h1>
+      <h3>Error 403 - Forbidden</h3>
+      <div>
+        <p id="error403url"></p>
+        <script>
+          document.getElementById("error403url").innerHTML = 
+          "Try re-entering the password and make sure you typed the URL correctly:<br>" + window.location.href;
+        </script>
+      </div>
+      <div>
+        <button onclick="document.location='index.html'" class="buttonBlue50">Go To Homepage</button>
+      </div>
+    </div>
+    <p>You will be redirected to the home page in 15 seconds.</p>
+    <div>
+      <h3>What happened?</h3>
+      <p>You do not have permission to access this item.</p>
+    </div>
+  </body>
+</html>
