@@ -12,33 +12,30 @@ footer, header {
   background-color: E0E0E0;
   color: black;
 }
-.buttonGreen50 {
+button {
   text-align: center;
+  color: black;
+  border: 1px solid black;
   padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+button:hover {
+  color: white;
+}
+.buttonGreen50 {
   background-color: #00FF00;
   width: 50%;
-  color: black;
-  border: 1px solid black;
-  font-size: 20px;
-  cursor: pointer;
 }
 .buttonBlue50 {
-  text-align: center;
-  padding: 10px;
   background-color: #0000FF;
   width: 50%;
-  color: black;
-  border: 1px solid black;
-  font-size: 20px;
-  cursor: pointer;
 }
 .buttonGreen50:hover {
   background-color: #00AA00;
-  color: white;
 }
 .buttonBlue50:hover {
   background-color: #0000AA;
-  color: white;
 }
 ::selection, ::-moz-selection {
   background: #FF0000;
