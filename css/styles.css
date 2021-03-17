@@ -26,11 +26,9 @@ button:hover {
   background-color: #00AA00;
   color: white;
 }
-::selection {
+::selection, ::-moz-selection {
   background: #FF0000;
-}
-::-moz-selection {
-  background: #FF0000;
+  color: #000000;
 }
 .disable {
   cursor: not-allowed;
