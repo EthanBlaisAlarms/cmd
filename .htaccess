@@ -7,3 +7,7 @@ ErrorDocument 400 /400.html
 order allow,deny
 deny from all
 </Files>
+
+order allow,deny
+allow from all
+deny from mcs.k12.ny.us
