@@ -31,11 +31,18 @@ button:hover {
   background-color: #0000FF;
   width: 50%;
 }
+.buttonRed50 {
+  background-color: #FF0000;
+  width: 50%;
+}
 .buttonGreen50:hover {
   background-color: #00AA00;
 }
 .buttonBlue50:hover {
   background-color: #0000AA;
+}
+.buttonRed50:hover {
+  background-color: #AA0000;
 }
 ::selection, ::-moz-selection {
   background: #FF0000;
