@@ -1,4 +1,4 @@
 <php?>
   echo "TEST TEST TEST";
-  $var = "TEST\nTEST \"TEST\"
+  $var = "TEST\nTEST \"TEST\";
   echo $var;
