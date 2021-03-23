@@ -20,7 +20,7 @@
         <button onclick="document.location='index.html'" class="buttonBlue50">Go To Homepage</button>
       </div>
     </div>
-    <p>You will be redirected to the home page in <span id="counter">15</span> seconds.</p>
+    <p>You will be redirected to the home page in <span id="counter">15</span> <span id="sec">seconds</span>.</p>
     <script type="text/javascript">
       function countdown() {
         var i = document.getElementById('counter');
@@ -29,6 +29,12 @@
         }
         if (parseInt(i.innerHTML)!=0) {
           i.innerHTML = parseInt(i.innerHTML)-1;
+        }
+      }
+      function countdownSec() {
+        var x = document.getElementById('sec');
+        if (parseInt(i.innerHTML)=1) {
+          x.innerHTML = "second"
         }
       }
       setInterval(function(){ countdown(); },1000);
