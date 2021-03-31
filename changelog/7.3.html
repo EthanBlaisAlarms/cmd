@@ -2,6 +2,13 @@
   <head>
     <title>EBA Command Center - Changelog</title>
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
   <body>
     <div>
@@ -14,8 +21,6 @@
       </ul>
     </div>
     
-    <footer>
-      <p><a href="../index.html" title="Homepage">Home</a> | <a href="../downloads.html" title="View all downloads">Downloads</a> | <a href="https://sites.google.com/view/ebatools/home/cmd" title="EBA Command Center Old Site">Old Site</a> | <a href="../contactus.html" title="Contact Us">Contact Us</a></p>
-    </footer>
+    <div id="footer"></div>
   </body>
 </html>
