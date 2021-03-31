@@ -3,7 +3,7 @@ table, th, td {
   border-collapse: collapse;
   background-color: E0E0E0;
 }
-footer, header {
+#footer, #header {
   text-align: right;
   padding: 2px;
   width: 100%;
@@ -15,7 +15,7 @@ footer, header {
 body {
   margin-bottom:50px;
 }
-footer {
+#footer {
   position: fixed;
   height: 50px;
   bottom: 0px;
