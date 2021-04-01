@@ -60,3 +60,26 @@ button:hover {
 .disable {
   cursor: not-allowed;
 }
+a:link {
+  color: #FF0000;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #00FF00;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #AA0000;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #0000FF;
+  background-color: transparent;
+  text-decoration: underline;
+}
