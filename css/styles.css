@@ -13,6 +13,8 @@ table, th, td {
   color: black;
   position: fixed;
   height: 50px;
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 #footerLogo {
   text-align: left;
