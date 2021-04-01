@@ -65,19 +65,16 @@ a:link {
   background-color: transparent;
   text-decoration: underline;
 }
-
 a:visited {
   color: #FF00AA;
   background-color: transparent;
   text-decoration: underline;
 }
-
 a:hover {
   color: #AA0000;
   background-color: transparent;
   text-decoration: underline;
 }
-
 a:active {
   color: #0000FF;
   background-color: transparent;
