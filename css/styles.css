@@ -12,6 +12,9 @@ table, th, td {
   background-color: E0E0E0;
   color: black;
 }
+#footerLogo {
+  text-align: left;
+}
 body {
   margin-bottom:75px;
 }
