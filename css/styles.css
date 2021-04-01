@@ -19,6 +19,7 @@ table, th, td {
 }
 body {
   margin-bottom:75px;
+  margin-top:75px;
 }
 #footer {
   position: fixed;
