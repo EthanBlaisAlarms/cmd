@@ -11,6 +11,8 @@ table, th, td {
   right: 0px;
   background-color: E0E0E0;
   color: black;
+  position: fixed;
+  height: 50px;
 }
 #footerLogo {
   text-align: left;
@@ -22,11 +24,12 @@ body {
   margin-top:75px;
 }
 #footer {
-  position: fixed;
-  height: 50px;
   bottom: 0px;
   margin-bottom: 0px;
 }
+#header {
+  top: 0px;
+  margin-top: 0px;
 button {
   text-align: center;
   color: black;
