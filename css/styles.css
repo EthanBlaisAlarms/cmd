@@ -65,7 +65,7 @@ button:hover {
 .buttonRed50:hover {
   background-color: #AA0000;
 }
-::selection, ::-moz-selection {
+::selection {
   background: #FF0000;
   color: #000000;
 }
