@@ -30,6 +30,41 @@
     <div>
       <h1>Welcome to the offical EBA Command Center website!</h1>
       <div>
+        <script>
+          function getOS() {
+            var os = navigator.appVersion
+            var compatible = "Your operating system was not recognized: " + os
+            if (os.indexOf("Win")!=-1) {
+              compatible = "Your OS was detected as Windows, but we couldnt get your Windows version."
+              if (os.indexOf("Windows NT 10")!=-1) {
+                compatible = "Your OS (Windows 10) is compatible with EBA Command Center."
+              }
+              if (os.indexOf("Windows NT 8.1")!=-1) {
+                compatible = "Your OS (Windows 8.1) is compatible with EBA Command Center."
+              }
+              if (os.indexOf("Windows NT 8")!=-1) {
+                compatible = "Your OS (Windows 8) is compatible with EBA Command Center."
+              }
+              if (os.indexOf("Windows NT 7")!=-1) {
+                compatible = "Your OS (Windows 7) is compatible with EBA Command Center."
+              }
+              if (os.indexOf("Windows NT Vista")!=-1) {
+                compatible = "EBA Command Center might not work on your OS (Windows Vista)."
+              }
+              if (os.indexOf("Windows NT XP")!=-1) {
+                compatible = "EBA Command Center is not compatible with your OS (Windows XP)."
+              }
+            }
+            if (os.indexOf("Mac")!=-1) {
+              compatible = "EBA Command Center is not compatible with your OS (Mac OS)."
+            }
+            if (os.indexOf("Linux")!=-1) {
+              compatible = "EBA Command Center is not compatible with your OS (Linux)."
+            }
+            document.getElementById("OS").innerHTML = compatible
+          }
+        </script>
+        <p id="OS"></p>
         <button onclick="document.location='downloads.html'" class="buttonGreen50">Download Now!</button>
       </div>
     </div>
