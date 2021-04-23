@@ -64,6 +64,9 @@
           if (os.indexOf("CrOS") != -1) {
             compatible = "EBA Command Center is not compatible with your OS (Linux.ChromeOS)."
           }
+          if (os.indexOf("Android") != -1) {
+            compatible = "EBA Command Center is not compatible with your OS (Linux.Android)."
+          }
           document.getElementById("OS").innerHTML = compatible
         </script>
         <button onclick="document.location='downloads.html'" class="buttonGreen50">Download Now!</button>
