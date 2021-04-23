@@ -59,9 +59,11 @@
             compatible = "EBA Command Center is not compatible with your OS (Mac OS)."
           }
           if (os.indexOf("Linux")!=-1) {
-            compatible = "EBA Command Center is not compatible with your OS (Linux)."
+            compatible = "EBA Command Center is not compatible with your OS (Linux.Unknown)."
           }
           document.getElementById("OS").innerHTML = compatible
+          if (os.indexOf("CrOS")!=-1) {
+            compatible = "EBA Command Center is not compatible with your OS (Linux.ChromeOS)."
         </script>
         <button onclick="document.location='downloads.html'" class="buttonGreen50">Download Now!</button>
       </div>
