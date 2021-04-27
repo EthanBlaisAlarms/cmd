@@ -37,35 +37,38 @@
           if (os.indexOf("Win") != -1) {
             compatible = "Your OS was detected as Windows, but we couldnt get your Windows version."
             if (os.indexOf("Windows NT 10") != -1) {
-              compatible = "Your OS (Windows 10) is compatible with EBA Command Center."
+              compatible = "Your Windows 10 PC is compatible with EBA Command Center!"
             }
             if (os.indexOf("Windows NT 8.1") != -1) {
-              compatible = "Your OS (Windows 8.1) is compatible with EBA Command Center."
+              compatible = "Your Windows 8.1 PC is compatible with EBA Command Center!"
             }
             if (os.indexOf("Windows NT 8") != -1) {
-              compatible = "Your OS (Windows 8) is compatible with EBA Command Center."
+              compatible = "Your Windows 8 PC is compatible with EBA Command Center!"
             }
             if (os.indexOf("Windows NT 7") != -1) {
-              compatible = "Your OS (Windows 7) is compatible with EBA Command Center."
+              compatible = "Your Windows 7 PC is compatible with EBA Command Center!"
             }
             if (os.indexOf("Windows NT Vista") != -1) {
-              compatible = "EBA Command Center might not work on your OS (Windows Vista)."
+              compatible = "Your Windows Vista PC might run into a few problems running EBA Command Center."
             }
             if (os.indexOf("Windows NT XP") != -1) {
-              compatible = "EBA Command Center is not compatible with your OS (Windows XP)."
+              compatible = "Sorry! EBA Command Center will not run properly on your Windows XP PC."
             }
           }
           if (os.indexOf("Mac") != -1) {
-            compatible = "EBA Command Center is not compatible with your OS (Mac OS)."
+            compatible = "Sorry! EBA Command Center will not run properly on your MacOS PC."
           }
           if (os.indexOf("Linux") != -1) {
-            compatible = "EBA Command Center is not compatible with your OS (Linux.Unknown)."
+            compatible = "Sorry! EBA Command Center will not run properly on your Linux device."
           }
           if (os.indexOf("CrOS") != -1) {
-            compatible = "EBA Command Center is not compatible with your OS (Linux.ChromeOS)."
+            compatible = "Sorry! EBA Command Center will not run properly on your Linux(ChromeOS) PC."
           }
           if (os.indexOf("Android") != -1) {
-            compatible = "EBA Command Center is not compatible with your OS (Linux.Android)."
+            compatible = "Sorry! EBA Command Center will not run properly on your Linux(Android) device."
+          }
+          if (os.indexOf("SMART-TV") != -1) {
+            compatible = "Sorry! EBA Command Center will not run properly on your Linux(Samsung TV)."
           }
           document.getElementById("OS").innerHTML = compatible
         </script>
@@ -94,6 +97,17 @@
           <li>Windows 7</li>
         </ul>
       </div>
+      <div>
+        <h3>Im using an incompatible device! What can I do?</h3>
+        <p>If you're using an old Windows OS (Windows Vista, Windows XP, Windows ME... etc.), you can upgrade to <a href="https://www.microsoft.com/en-us/software-download/Windows7">Windows 7</a> or <a href="https://www.microsoft.com/en-us/software-download/Windows10">Windows 10</a> (depending on your hardware).<p>
+        <p>If you're using a MacOS device, you can install <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>, by selecting OS X Hosts. This will download VirtualBox for MacOS. Select the edition of Windows you want to run on your Virtual Machine:</p>
+        <ul>
+          <li><a href="https://www.microsoft.com/en-us/software-download/Windows10ISO">Windows 10</a></li>
+          <li><a href="https://www.microsoft.com/en-us/software-download/Windows8ISO">Windows 8.1</a></li>
+          <li><a href="https://www.microsoft.com/en-us/software-download/Windows7">Windows 7</a></li>
+        </ul>
+        <p>If you're using a Linux device, you can install <a href="https://www.virtualbox.org/wiki/Linux_Downloads">VirtualBox</a>, and select your Linux Distribution (ex: Ubuntu). This will download VirtualBox for your Linux Distribution. Select the edition of Windows you want to run on your Virtual Machine (above).</p>
+        <p>If your OS wasn't mentioned above, you can try to see if <a href="https://virtualbox.org/wiki/Downloads">VirtualBox</a> can run on your device. If your using a mobile device (Android, iOS, FireOS... etc), you will need a PC to run EBA Command Center.</p>
     </div>
     <div>
       <div id="footer"></div>
