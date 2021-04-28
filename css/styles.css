@@ -92,12 +92,12 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
-#textRed {
+.textRed {
   color: red;
 }
-#textYellow {
+.textYellow {
   color: yellow;
 }
-#textGreen {
+.textGreen {
   color: lime;
 }
