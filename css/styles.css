@@ -94,10 +94,13 @@ a:active {
 }
 .textRed {
   color: red;
+  text-decoration: bold;
 }
 .textYellow {
   color: yellow;
+  text-decoration: bold;
 }
 .textGreen {
   color: lime;
+  text-decoration: bold;
 }
