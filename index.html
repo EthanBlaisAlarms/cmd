@@ -30,47 +30,69 @@
     <div>
       <h1>Welcome to the offical EBA Command Center website!</h1>
       <div>
-        <p id="OS"></p>
+        <p id="OSRed" class="textRed"></p>
+        <p id="OSYellow" class="textYellow"></p>
+        <p id="OSGreen" class="textGreen"></p>
         <script>
           var os = navigator.appVersion
           var compatible = "Your operating system was not recognized: " + os
+          var isComp = false
           if (os.indexOf("Windows") != -1) {
             compatible = "Your OS was detected as Windows, but we couldnt get your Windows version."
             if (os.indexOf("Windows NT 10") != -1) {
               compatible = "Your Windows 10 PC is compatible with EBA Command Center!"
+              isComp = 1
             }
             if (os.indexOf("Windows NT 8.1") != -1) {
               compatible = "Your Windows 8.1 PC is compatible with EBA Command Center!"
+              isComp = 2
             }
             if (os.indexOf("Windows NT 8") != -1) {
               compatible = "Your Windows 8 PC is compatible with EBA Command Center!"
+              isComp = 2
             }
             if (os.indexOf("Windows NT 7") != -1) {
               compatible = "Your Windows 7 PC is compatible with EBA Command Center!"
+              isComp = 2
             }
             if (os.indexOf("Windows NT Vista") != -1) {
               compatible = "Your Windows Vista PC might run into a few problems running EBA Command Center."
+              isComp = 1
             }
             if (os.indexOf("Windows NT XP") != -1) {
               compatible = "Sorry! EBA Command Center will not run properly on your Windows XP PC."
+              isComp = 0
             }
           }
           if (os.indexOf("Mac") != -1) {
             compatible = "Sorry! EBA Command Center will not run properly on your MacOS PC."
+            isComp = 0
           }
           if (os.indexOf("Linux") != -1) {
             compatible = "Sorry! EBA Command Center will not run properly on your Linux device."
+            isComp = 0
           }
           if (os.indexOf("CrOS") != -1) {
             compatible = "Sorry! EBA Command Center will not run properly on your Linux(ChromeOS) PC."
+            isComp = 0
           }
           if (os.indexOf("Android") != -1) {
             compatible = "Sorry! EBA Command Center will not run properly on your Linux(Android) device."
+            isComp = 0
           }
           if (os.indexOf("SMART-TV") != -1) {
             compatible = "Sorry! EBA Command Center will not run properly on your Linux(Samsung TV)."
+            isComp = 0
           }
-          document.getElementById("OS").innerHTML = compatible
+          
+          //Display
+          if (isComp == 0) {
+            document.getElementById("OSRed").innerHTML = compatible
+          } else if (isComp == 1) {
+            document.getElementByID("OSYellow").innerHTML = compatible
+          } else if (isComp == 2) {
+            document.getElementByID("OSGreen").innerHTML = compatible
+          }
         </script>
         <button onclick="document.location='downloads.html'" class="buttonGreen50">Download Now!</button>
       </div>
