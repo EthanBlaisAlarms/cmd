@@ -41,7 +41,7 @@
             compatible = "Your OS was detected as Windows, but we couldnt get your Windows version."
             if (os.indexOf("Windows NT 10") != -1) {
               compatible = "Your Windows 10 PC is compatible with EBA Command Center!"
-              isComp = 1
+              isComp = 2
             }
             if (os.indexOf("Windows NT 8.1") != -1) {
               compatible = "Your Windows 8.1 PC is compatible with EBA Command Center!"
@@ -68,6 +68,9 @@
             compatible = "Sorry! EBA Command Center will not run properly on your MacOS PC."
             isComp = 0
           }
+          if (os.indexOf("iPhone") != -1) {
+            compatible = "Sorry! EBA Command Center will not run properly on your iPhone."
+          }
           if (os.indexOf("Linux") != -1) {
             compatible = "Sorry! EBA Command Center will not run properly on your Linux device."
             isComp = 0
@@ -88,9 +91,11 @@
           //Display
           if (isComp === 0) {
             document.getElementById("OSRed").innerHTML = compatible
-          } else if (isComp === 1) {
+          }
+          if (isComp === 1) {
             document.getElementByID("OSYellow").innerHTML = compatible
-          } else if (isComp === 2) {
+          }
+          if (isComp === 2) {
             document.getElementByID("OSGreen").innerHTML = compatible
           }
         </script>
