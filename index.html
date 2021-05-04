@@ -36,7 +36,11 @@
         <script>
           var os = navigator.appVersion
           var compatible = "Your operating system was not recognized: " + os
-          var isComp = false
+          var isComp = 1
+          if (os.indexOf("X11") != -1) {
+            compatible = "Sorry! EBA Command Center will not run properlt on your Linux(Ubuntu) device."
+            isComp = 0
+          }
           if (os.indexOf("Windows") != -1) {
             compatible = "Your OS was detected as Windows, but we couldnt get your Windows version."
             if (os.indexOf("Windows NT 10") != -1) {
@@ -86,7 +90,6 @@
           if (os.indexOf("SMART-TV") != -1) {
             compatible = "Sorry! EBA Command Center will not run properly on your Linux(Samsung TV)."
             isComp = 0
-          }
           
           //Display
           if (isComp === 0) {
