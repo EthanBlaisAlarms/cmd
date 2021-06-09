@@ -2,57 +2,54 @@ var os = navigator.appVersion
 var compatible = "Your operating system was not recognized: " + os
 var isComp = 1
 if (os.indexOf("X11") != -1) {
-  compatible = "Your OS was detected as Linux, which doesnt support EBA Cmd."
+  compatible = "Your OS was detected as Ubuntu, which doesnt support EBA Command Center."
   isComp = 0
 }
 if (os.indexOf("Windows") != -1) {
-  compatible = "Your OS was detected as Windows, but we couldnt get your Windows version."
+  compatible = "Your OS was detected as Microsoft Windows."
+  isComp = 1
   if (os.indexOf("Windows NT 10") != -1) {
-    compatible = "Your Windows 10 PC is compatible with EBA Command Center!"
-    isComp = 2
-  }
-  if (os.indexOf("Windows NT 8.1") != -1) {
-    compatible = "Your Windows 8.1 PC is compatible with EBA Command Center!"
+    compatible = "EBA Command Center is compatible with your PC which runs Microsoft Windows 10."
     isComp = 2
   }
   if (os.indexOf("Windows NT 8") != -1) {
-    compatible = "Your Windows 8 PC is compatible with EBA Command Center!"
+    compatible = "EBA Command Center is compatible with your PC which runs Microsoft Windows 8."
     isComp = 2
   }
   if (os.indexOf("Windows NT 7") != -1) {
-    compatible = "Your Windows 7 PC is compatible with EBA Command Center!"
+    compatible = "EBA Command Center is compatible with your PC which runs Microsoft Windows 7."
     isComp = 2
   }
   if (os.indexOf("Windows NT Vista") != -1) {
-    compatible = "Your Windows Vista PC might run into a few problems running EBA Command Center."
-    isComp = 1
+    compatible = "EBA Command Center is compatible with your PC which runs Microsoft Windows Vista."
+    isComp = 2
   }
   if (os.indexOf("Windows NT XP") != -1) {
-    compatible = "Sorry! EBA Command Center will not run properly on your Windows XP PC."
+    compatible = "Your OS was detected as Microsoft Windows XP, which doesnt support EBA Command Center."
     isComp = 0
   }
 }
 if (os.indexOf("Mac") != -1) {
-  compatible = "Sorry! EBA Command Center will not run properly on your MacOS PC."
+  compatible = "Your OS was detected as Apple MacOS, which doesnt support EBA Command Center."
   isComp = 0
 }
 if (os.indexOf("iPhone") != -1) {
-  compatible = "Sorry! EBA Command Center will not run properly on your iPhone."
+  compatible = "Your device was detected as Apple iPhone, which doesnt support EBA Command Center."
 }
 if (os.indexOf("Linux") != -1) {
-  compatible = "Sorry! EBA Command Center will not run properly on your Linux device."
+  compatible = "Your OS was detected as Linux, which doesnt support EBA Command Center."
   isComp = 0
 }
 if (os.indexOf("CrOS") != -1) {
-  compatible = "Sorry! EBA Command Center will not run properly on your Linux(ChromeOS) PC."
+  compatible = "Your OS was detected as Google ChromeOS_Linux, which doesnt support EBA Command Center."
   isComp = 0
 }
 if (os.indexOf("Android") != -1) {
-  compatible = "Sorry! EBA Command Center will not run properly on your Linux(Android) device."
+  compatible = "Your device was detected as Android_Linux, which doesnt support EBA Command Center."
   isComp = 0
 }
 if (os.indexOf("SMART-TV") != -1) {
-  compatible = "Sorry! EBA Command Center will not run properly on your Linux(Samsung TV)."
+  compatible = "Your device was detected as Samsung SmartTV_Linux, which doesnt support EBA Command Center."
   isComp = 0
 }
 //Display
