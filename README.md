@@ -5,5 +5,4 @@ Users can download EBA Command Center from this page.
 
 # Important Links:
 EBA Command Center Site: https://ethanblaisalarms.github.io/cmd  
-Old Website: https://sites.google.com/view/eba-tools/home/cmd  
-EBA Cmd Wiki: https://github.com/EthanBlaisAlarms/cmd/wiki
+EBA Cmd Wiki: https://eba-cmd.fandom.com
