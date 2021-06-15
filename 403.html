@@ -1,33 +1,32 @@
 <html lang="en">
   <head>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://ethanblaisalarms.github.io/cmd/css/styles.css" rel="stylesheet" type="text/css">
     <title>EBA Command Center - 403</title>
-    <link href="css/styles404.css" rel="stylesheet" type="text/css">
+    <link href="https://ethanblaisalarms.github.io/cmd/css/styles404.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
   </head>
   <body>
     <div id="header"></div>
     <div>
-      <h1>403</h1>
-      <h3>Error 403 - Forbidden</h3>
+      <h1>Error 403</h1>
       <div>
         <p id="error403url"></p>
         <script>
-          document.getElementById("error403url").innerHTML = 
-          "Try re-entering the password and make sure you typed the URL correctly:<br>" + window.location.href;
+          document.getElementById("error404url").innerHTML = "Error details: A request to access '" + window.location.href + "' failed because the computer that requested the document does not have access. Please check the URL and try again.";
         </script>
       </div>
       <div>
         <button onclick="document.location='index.html'" class="buttonBlue50">Go To Homepage</button>
       </div>
     </div>
-    <p>You will be redirected to the home page in <span id="counter">15</span> <span id="sec">seconds</span>.</p>
-    <script src="countdown.js"></script>
+    <p>You will be redirected to the home page in <span id="counter">20</span> <span id="sec">seconds</span>.</p>
+    <script src="https://ethanblaisalarms.github.io/cmd/countdown.js"></script>
     <div>
       <h3>What happened?</h3>
-      <p>You do not have permission to access this item.</p>
+      <p>You do not have access to that file.</p>
     </div>
+    
     <div id="footer"></div>
   </body>
 </html>
