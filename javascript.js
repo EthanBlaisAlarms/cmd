@@ -1,6 +1,6 @@
 $(function(){
-  $("#header").load("header.html");
-  $("#footer").load("footer.html");
+  $("#header").load("https://eba-tools.github.io/data/header.html");
+  $("#footer").load("https://eba-tools.github.io/data/footer.html");
 });
 (function(c,l,a,r,i,t,y){
   c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
