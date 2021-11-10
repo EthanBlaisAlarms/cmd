@@ -1,0 +1,106 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: E0E0E0;
+}
+#footer, #header {
+  text-align: right;
+  padding: 2px;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  background-color: E0E0E0;
+  color: black;
+  position: fixed;
+  height: 50px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#footerLogo {
+  text-align: left;
+  height: 50px;
+  width: 50px;
+}
+body {
+  margin-bottom:75px;
+  margin-top:75px;
+}
+#footer {
+  bottom: 0px;
+  margin-bottom: 0px;
+}
+#header {
+  top: 0px;
+  margin-top: 0px;
+}
+button {
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+button:hover {
+  color: white;
+}
+.buttonGreen50 {
+  background-color: #00FF00;
+  width: 50%;
+}
+.buttonBlue50 {
+  background-color: #0000FF;
+  width: 50%;
+}
+.buttonRed50 {
+  background-color: #FF0000;
+  width: 50%;
+}
+.buttonGreen50:hover {
+  background-color: #00AA00;
+}
+.buttonBlue50:hover {
+  background-color: #0000AA;
+}
+.buttonRed50:hover {
+  background-color: #AA0000;
+}
+::selection {
+  background: #FF0000;
+  color: #000000;
+}
+.disable {
+  cursor: not-allowed;
+}
+a:link {
+  color: #FF0000;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: #FFAA00;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: #AA0000;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #0000FF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.textRed {
+  color: red;
+  text-decoration: bold;
+}
+.textYellow {
+  color: yellow;
+  text-decoration: bold;
+}
+.textGreen {
+  color: lime;
+  text-decoration: bold;
+}
